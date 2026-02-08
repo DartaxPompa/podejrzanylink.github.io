@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Hej Hubert 💖</title>
+<style>
+body {
+  background: pink;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding-top: 80px;
+}
+button {
+  background: #ffb6c1;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 20px;
+}
+button:hover { transform: scale(1.1); }
+.hidden { display: none; }
+</style>
+</head>
+
+<body>
+
+<h1 id="text">(づ｡◕‿‿◕｡)づ Hej Hubert!</h1>
+<button onclick="step1()">hej</button>
+
+<script>
+let step = 0;
+
+function step1(){
+  document.body.innerHTML = `
+  <h1>🐢 Żółwiczek!</h1>
+  <button onclick="step2()">🤜🤛</button>`;
+}
+
+function step2(){
+  document.body.innerHTML = `
+  <h1>🐹 Chomiczek!</h1>
+  <button onclick="step3()">🐹✨</button>`;
+}
+
+function step3(){
+  document.body.innerHTML = `
+  <h1>💗 Kocham Cię 💗</h1>
+  <button onclick="step4()">kocham cię</button>`;
+}
+
+function step4(){
+  document.body.innerHTML = `
+  <h1>🎆 KOCHAM CIĘ HUBERT 🎆</h1>
+  <p>(≧◡≦) ♡ 💖 ✨ 🎇</p>`;
+}
+</script>
+
+</body>
+</html>
